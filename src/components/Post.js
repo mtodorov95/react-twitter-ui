@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import "./Post.css";
 import { Avatar } from "@material-ui/core";
+import IconButton from "@material-ui/core/IconButton";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
@@ -31,10 +32,21 @@ const Post = forwardRef(
           </div>
           <img src={image} />
           <div className="post__footer">
-            <ChatBubbleOutlineIcon fontSize="small" />
-            <RepeatIcon fontSize="small" />
-            <FavoriteBorderIcon fontSize="small" />
-            <PublishIcon fontSize="small" />
+            <IconButton className="post__chatButton">
+              <ChatBubbleOutlineIcon fontSize="small" />
+            </IconButton>
+
+            <IconButton className="post__retweetButton">
+              <RepeatIcon fontSize="small" />
+            </IconButton>
+
+            <IconButton className="post__likeButton">
+              <FavoriteBorderIcon fontSize="small" />
+            </IconButton>
+
+            <IconButton className="post__publishButton">
+              <PublishIcon fontSize="small" />
+            </IconButton>
           </div>
         </div>
       </div>

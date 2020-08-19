@@ -37,4 +37,8 @@
 .tweetBox__imageInput {
   border: none;
   padding: 10px;
+  background-color: var(--twitter-background);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
 }

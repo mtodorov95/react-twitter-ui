@@ -20,11 +20,7 @@ function Widgets() {
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="Twitch"
-          options={{ height: 400 }}
-        />
-        <TwitterShareButton
-          url={"#"}
-          options={{ text: "tweet text", via: "username" }}
+          options={{ height: 350 }}
         />
       </div>
     </div>
